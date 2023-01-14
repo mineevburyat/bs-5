@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="symbol-block">
+      <svg id="icon-user" viewBox="0 0 32 32">
+        <path
+          d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"
+        ></path>
+      </svg>
+      <svg id="icon-user-check" viewBox="0 0 32 32">
+        <path d="M30 19l-9 9-3-3-2 2 5 5 11-11z"></path>
+        <path
+          d="M14 24h10v-3.598c-2.101-1.225-4.885-2.066-8-2.321v-1.649c2.203-1.242 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h14v-2z"
+        ></path>
+      </svg>
+      <svg id="icon-list2" viewBox="0 0 32 32">
+        <path
+          d="M12 2h20v4h-20v-4zM12 14h20v4h-20v-4zM12 26h20v4h-20v-4zM0 4c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM0 16c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM0 28c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4z"
+        ></path>
+      </svg>
+      <svg id="icon-enter" viewBox="0 0 32 32">
+        <path
+          d="M12 16h-10v-4h10v-4l6 6-6 6zM32 0v26l-12 6v-6h-12v-8h2v6h10v-18l8-4h-18v8h-2v-10z"
+        ></path>
+      </svg>
+      <svg id="icon-exit" viewBox="0 0 32 32">
+        <path
+          d="M24 20v-4h-10v-4h10v-4l6 6zM22 18v8h-10v6l-12-6v-26h22v10h-2v-8h-16l8 4v18h8v-6z"
+        ></path>
+      </svg>
+      <svg id="icon-search" viewBox="0 0 32 32">
+        <path
+          d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+        ></path>
+      </svg>
+      <svg id="icon-finder" viewBox="0 0 32 32">
+        <path
+          d="M17.788 24.32c-0-0.001-0-0.003-0-0.004 0 0.001 0 0.003 0 0.004z"
+        ></path>
+        <path
+          d="M17.831 25.454c-0-0.007-0.001-0.015-0.001-0.022 0 0.007 0.001 0.015 0.001 0.022z"
+        ></path>
+        <path
+          d="M17.807 24.885c-0-0.006-0-0.011-0.001-0.017 0 0.006 0 0.011 0.001 0.017z"
+        ></path>
+        <path
+          d="M30 0h-28c-1.1 0-2 0.9-2 2v28c0 1.1 0.9 2 2 2h15.432c0.001 0 0.003 0 0.004 0s0.003-0 0.004-0h12.56c1.1 0 2-0.9 2-2v-28c0-1.1-0.9-2-2-2zM6 7c0-0.552 0.448-1 1-1s1 0.448 1 1v2c0 0.552-0.448 1-1 1s-1-0.448-1-1v-2zM30 30h-11.721c-0.209-1.315-0.341-2.671-0.418-3.988 0 0.004 0 0.007 0.001 0.011-0.616 0.067-1.237 0.102-1.862 0.102-4.177 0-8.199-1.52-11.328-4.281-0.466-0.411-0.51-1.122-0.099-1.588s1.122-0.51 1.588-0.099c2.717 2.398 6.211 3.718 9.839 3.718 0.596 0 1.189-0.036 1.776-0.107-0.069-3.694 0.215-6.622 0.22-6.669 0.028-0.281-0.064-0.561-0.254-0.77s-0.459-0.329-0.741-0.329h-2.974c0.043-1.082 0.159-2.932 0.467-5.006 0.589-3.961 1.625-7.055 3.005-8.994h12.502v28z"
+        ></path>
+        <path
+          d="M25 10c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2c0 0.552-0.448 1-1 1z"
+        ></path>
+        <path
+          d="M16.89 26.101c-0.114 0.006-0.228 0.011-0.342 0.014 0.114-0.004 0.228-0.008 0.342-0.014z"
+        ></path>
+        <path
+          d="M16 26.125c0.147 0 0.293-0.002 0.439-0.006-0.146 0.004-0.292 0.006-0.439 0.006z"
+        ></path>
+        <path
+          d="M16.846 23.85c0.024-0.001 0.049-0.003 0.073-0.004-0.024 0.002-0.049 0.003-0.073 0.004z"
+        ></path>
+        <path
+          d="M16.409 23.869c0.034-0.001 0.067-0.002 0.101-0.003-0.034 0.001-0.067 0.003-0.101 0.003z"
+        ></path>
+        <path
+          d="M27.427 20.256c-0.411-0.466-1.122-0.51-1.588-0.099-2.27 2.004-5.083 3.254-8.063 3.612 0.013 0.727 0.040 1.484 0.086 2.255 3.499-0.382 6.806-1.832 9.466-4.18 0.466-0.411 0.51-1.122 0.099-1.588z"
+        ></path>
+        <path
+          d="M17.859 26.023c-0.144 0.016-0.288 0.029-0.433 0.041 0.145-0.012 0.289-0.026 0.433-0.041z"
+        ></path>
+        <path
+          d="M17.359 26.070c-0.122 0.010-0.244 0.018-0.367 0.025 0.122-0.007 0.245-0.015 0.367-0.025z"
+        ></path>
+      </svg>
+      <svg id="icon-eye-plus" viewBox="0 0 32 32">
+        <path d="M32 4h-4v-4h-4v4h-4v4h4v4h4v-4h4z"></path>
+        <path
+          d="M26.996 13.938c0.576 0.64 1.1 1.329 1.563 2.062-1.197 1.891-2.79 3.498-4.67 4.697-2.362 1.507-5.090 2.303-7.889 2.303s-5.527-0.796-7.889-2.303c-1.88-1.199-3.473-2.805-4.67-4.697 1.197-1.891 2.79-3.498 4.67-4.697 0.122-0.078 0.246-0.154 0.371-0.228-0.311 0.854-0.482 1.776-0.482 2.737 0 4.418 3.582 8 8 8s8-3.582 8-8c0-0.022-0.001-0.043-0.001-0.065-3.415-0.879-5.947-3.957-5.998-7.635-0.657-0.074-1.325-0.113-2.001-0.113-6.979 0-13.028 4.064-16 10 2.972 5.936 9.021 10 16 10s13.027-4.064 16-10c-0.551-1.101-1.209-2.137-1.958-3.095-0.915 0.537-1.946 0.897-3.046 1.034zM13 10c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"
+        ></path>
+      </svg>
+      <svg id="icon-eye-minus" viewBox="0 0 32 32">
+        <path d="M20 4h12v4h-12v-4z"></path>
+        <path
+          d="M27.198 10h-9.198v-3.887c-0.657-0.074-1.324-0.113-2-0.113-6.979 0-13.028 4.064-16 10 2.972 5.936 9.021 10 16 10s13.027-4.064 16-10c-1.169-2.334-2.813-4.378-4.803-6zM13 10c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zM23.889 20.697c-2.362 1.507-5.090 2.303-7.889 2.303s-5.527-0.796-7.889-2.303c-1.88-1.199-3.473-2.805-4.67-4.697 1.197-1.891 2.79-3.498 4.67-4.697 0.122-0.078 0.246-0.154 0.371-0.228-0.311 0.854-0.482 1.776-0.482 2.737 0 4.418 3.582 8 8 8s8-3.582 8-8c0-0.962-0.17-1.883-0.482-2.737 0.124 0.074 0.248 0.15 0.371 0.228 1.88 1.199 3.473 2.805 4.67 4.697-1.197 1.891-2.79 3.498-4.67 4.697z"
+        ></path>
+      </svg>
+    </div>
+    <header class="header center">
+      <div class="logo-block">
+        <a href="index.html"
+          ><img
+            class="logo-img"
+            src="img/logo-icon.png"
+            alt="логотип дирекции спортивных сооружений"
+        /></a>
+        <a class="brand-text" href="index.html">
+          <h1 class="">Дирекция спортивных сооружений</h1></a
+        >
+      </div>
+      <div class="wrapper-column">
+        <div class="row">
+          <div class="phone-block">
+            <a href="tel:4345676"
+              ><span class="phone-text">+7(3012)431212</span></a
+            >
+          </div>
+          <nav class="btn-group-block">
+            <svg class="icon"><use xlink:href="#icon-enter"></use></svg>
+            <svg class="icon"><use xlink:href="#icon-finder"></use></svg>
+            <svg id="upsize" class="icon">
+              <use xlink:href="#icon-eye-plus"></use>
+            </svg>
+            <svg id="downsize" class="icon">
+              <use xlink:href="#icon-eye-minus"></use>
+            </svg>
+            <svg class="icon"><use xlink:href="#icon-search"></use></svg>
+          </nav>
+        </div>
+        <nav
+          class="navbar-collapse"
+          id="navbarSupportedContent"
+          role="navigation"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link text-wrap text-center"
+                href="/object.html"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                СПОРТИВНЫЕ ОБЪЕКТЫ
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                role="button"
+                class="nav-link"
+                href="/sport.html"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                СПОРТИВНЫЕ УСЛУГИ
+                <!-- <span class="sr-only">
+                            (текущий)
+                        </span> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-wrap text-center"
+                href="/section.html"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                СПОРТИВНЫЕ СЕКЦИИ
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/other.html"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                role="button"
+              >
+                АКЦИИ
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/other.html"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                role="button"
+              >
+                ПРОЧИЕ УСЛУГИ
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-wrap text-center"
+                href="/object.html"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                О НАС
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="home-wrapper">
+        <section class="main-page__card object">
+          <h2>Объекты</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid in
+            temporibus repellendus corrupti! Molestiae est possimus aliquam
+            ipsum autem, voluptate ipsam ex voluptatem temporibus nesciunt
+            ducimus, deserunt ratione provident illo itaque animi consequatur
+            explicabo! Quis quam repellendus ea quidem sequi magni unde quas
+            dicta eveniet officiis est omnis ratione libero rem, magnam
+            voluptatum deserunt perferendis architecto esse in voluptas
+            reiciendis, dolorum ullam inventore! Dolorum est impedit odit
+            necessitatibus quos quod non fugit voluptatibus rem, ullam suscipit
+            sequi veniam consectetur distinctio esse explicabo? Itaque
+            accusantium ipsum quasi recusandae atque fugit enim repellendus
+            minus corrupti optio impedit temporibus nemo unde, delectus ipsam
+            laudantium quas quo vel. Dicta doloremque ullam nostrum sequi fuga
+            consequatur repellendus temporibus harum, architecto id veniam. Quis
+            totam molestias, aliquid sit similique, tenetur vitae inventore,
+            architecto optio nulla reiciendis in temporibus reprehenderit
+            consequuntur? Assumenda quos inventore unde illo rerum dignissimos
+            voluptatem quam enim at dolores dolorum saepe deleniti, neque
+            mollitia aut nihil blanditiis maiores odio praesentium veniam error
+            perferendis impedit consectetur. Accusamus fugit, minus perspiciatis
+            suscipit magni facere modi dolorum non sit ipsam autem harum nostrum
+            similique et consectetur id ad veniam aliquid ipsum odit corporis
+            veritatis libero ea? Sapiente magnam ad sit quisquam nobis? Eius
+            sunt ipsa nihil perferendis? Animi architecto at doloribus
+            consequatur et quasi voluptates voluptas nostrum deserunt hic
+            recusandae ipsa enim porro quod cumque harum, sint id officiis
+            velit? Id voluptate corporis illum eum ipsam accusantium amet
+            necessitatibus nihil voluptatem ipsum! Voluptates atque tenetur
+            minus itaque corrupti quia delectus quis labore nesciunt at
+            laboriosam dicta doloribus quasi qui totam rem molestiae, nobis
+            quaerat eos repudiandae? Reiciendis harum laborum voluptas nulla
+            officia natus, quasi minus ab sapiente obcaecati voluptates est
+            incidunt similique, magnam placeat, odio esse earum culpa enim magni
+            eos at ipsa corrupti dolore. Quos earum similique sint fugiat
+            recusandae, nihil culpa quasi? Ipsa soluta fuga consequuntur, culpa
+            recusandae aperiam qui deserunt ut unde provident explicabo ex cum
+            praesentium earum veniam quae doloremque impedit reprehenderit esse
+            consectetur omnis quidem fugit, ad pariatur. Adipisci quasi
+            excepturi natus fuga, dicta vel facere fugit recusandae quod illo
+            sit minus. Obcaecati accusamus animi ea expedita tempora nihil earum
+            quos praesentium esse. Eveniet quam modi placeat esse dolorem
+            aperiam assumenda deserunt? Fugiat incidunt magnam quas.
+            Consequuntur hic pariatur eveniet doloribus soluta. Fugit repellat
+            ipsam at, maxime facere sapiente? Dolorum ullam molestiae minima
+            consectetur mollitia error, architecto similique sequi iste magnam
+            nobis facere cumque, et reiciendis! Quibusdam nemo sunt aut quod
+            veniam velit ut, corporis explicabo harum necessitatibus molestias
+            sequi obcaecati molestiae eaque pariatur asperiores fugit
+            voluptatibus sapiente exercitationem numquam laboriosam aspernatur
+            impedit quos. Distinctio non aliquam, iure nostrum quaerat omnis
+            molestiae officia odit consequuntur iusto libero reprehenderit a
+            ratione, laborum eius corporis laboriosam dignissimos doloremque et,
+            veritatis explicabo atque facilis sequi incidunt! Et enim nulla
+            omnis in qui deleniti repellendus voluptas velit consectetur
+            ratione, totam minima quis eius quae. Est perferendis nulla nam
+            expedita laudantium nobis voluptatibus mollitia, ipsa assumenda id
+            quibusdam corporis cum consequatur odio excepturi accusantium beatae
+            laborum cupiditate? Et, obcaecati in tempora ratione error atque
+            perspiciatis soluta. Quaerat tenetur repellat error nesciunt
+            laboriosam dolore illum, magnam saepe adipisci ipsum temporibus
+            dignissimos. Ipsa, provident excepturi! Cupiditate totam harum magni
+            fugit laboriosam deserunt saepe suscipit eaque minus non itaque,
+            blanditiis tempore cumque, maxime omnis placeat officia laborum eum.
+            Illum consequuntur, impedit dolor sed modi repudiandae laudantium
+            magnam facilis! Perspiciatis nesciunt expedita maxime quae quia
+            incidunt aperiam inventore reiciendis, at consequuntur ipsam error
+            architecto ea itaque quo magnam sapiente vero quidem nihil qui iure?
+            Blanditiis ratione reiciendis quas laudantium illo autem a
+            voluptatem architecto nostrum, molestias eveniet voluptate neque
+            ipsa exercitationem impedit totam odio adipisci, incidunt rerum
+            officiis inventore minus obcaecati ut! Molestiae doloribus optio
+            quidem ea similique voluptatem quam veniam illum non eveniet
+            recusandae quo modi, cum culpa. Nam voluptate quis provident ullam
+            deleniti fuga voluptatum eum libero ad inventore odio repellat ab,
+            est tenetur adipisci temporibus porro sapiente neque vitae quod
+            blanditiis ut nostrum. Nisi vel, sed nostrum impedit tenetur aperiam
+            dolorem asperiores rerum necessitatibus quam mollitia vero eos
+            accusantium deserunt fugit nihil tempore! Placeat quod error
+            possimus architecto a nihil, natus molestiae doloremque expedita
+            ratione eos asperiores nostrum quasi nesciunt ea labore recusandae!
+            Odio, omnis dolorem nobis sed rem obcaecati ullam sint at animi
+            quae? Nesciunt officiis architecto tempore eaque impedit veniam, qui
+            facere quod iusto exercitationem magnam quia, nulla perferendis,
+            corporis vitae in laudantium culpa vel earum. Ab expedita cupiditate
+            temporibus perferendis. Libero dignissimos quas voluptas nulla in
+            suscipit, omnis corporis nobis veritatis quibusdam, blanditiis
+            voluptatibus odit ad ipsa delectus consequatur, fugit consequuntur
+            numquam aspernatur. Reprehenderit veritatis eius vero at quod
+            assumenda molestias nemo consequuntur officiis sequi atque molestiae
+            distinctio temporibus tempora, voluptatibus dolores deserunt modi
+            aliquam aspernatur. Rerum magni, ducimus quidem veniam ipsam quae
+            delectus nihil sint itaque? Dolorum laborum, explicabo iusto,
+            numquam eum iure facilis voluptas itaque autem, possimus commodi
+            dolores magnam! Cum, obcaecati officia qui illo similique, officiis
+            placeat eveniet temporibus rem a nisi porro, fugiat corporis veniam
+            corrupti eos praesentium maiores quam saepe vero laborum impedit
+            quas. Quam perferendis sequi fugiat fuga quod adipisci ad laboriosam
+            quos laborum tenetur velit, temporibus dolorem facilis quaerat
+            molestiae esse natus accusamus cumque illum, nesciunt tempora.
+            Veritatis architecto cumque ut doloribus deleniti. Consequatur,
+            velit! Officiis cupiditate laborum exercitationem reprehenderit
+            quia, rem cum eius perferendis perspiciatis at minima error modi.
+            Voluptatem natus sint neque earum nemo vel culpa alias dolorem sequi
+            consequuntur dicta, cupiditate explicabo omnis labore. Tenetur,
+            maxime. Autem facilis, commodi magnam officiis possimus iusto vel
+            odio, explicabo quisquam praesentium impedit ad quia consequuntur
+            aut. Quod numquam inventore, ipsam aliquid eum deserunt eius et
+            iusto delectus molestiae soluta rem consequuntur natus alias dolor
+            tempore id officia cupiditate totam illo perspiciatis libero aperiam
+            quo? Nobis mollitia eos dignissimos quibusdam magnam aliquam commodi
+            hic dolore! Aperiam enim architecto, eaque molestiae hic, aut
+            officiis odit, at id alias numquam nisi quibusdam saepe dignissimos!
+            Eveniet, enim dicta veniam voluptate minima soluta quae sunt
+            expedita quod iusto assumenda voluptatibus error molestias
+            consectetur reiciendis quo excepturi, quasi eaque ut cupiditate
+            eligendi blanditiis aliquid quos! Accusantium eligendi ex blanditiis
+            facere a necessitatibus ad voluptas, animi illo provident velit iure
+            odio suscipit incidunt neque voluptatem itaque voluptate eveniet
+            ipsa similique cumque praesentium quibusdam quae nemo! Eligendi
+            reprehenderit dicta nihil odio autem dolor nostrum veniam quisquam
+            sequi eaque, iste harum ut fugit sit ipsum dolores corporis debitis
+            dignissimos quod voluptate. Voluptatibus cum libero molestias
+            consequatur, autem quis quod corporis repellat hic eaque aut dolores
+            commodi deleniti dolore mollitia et animi? In incidunt molestiae
+            quas nam. Nulla cumque aut veritatis officiis corrupti, nihil
+            perspiciatis. Aperiam ea pariatur inventore mollitia quod
+            repellendus porro quo quisquam, voluptatum quaerat tempora
+            voluptates numquam officia eius minima sunt perspiciatis. Pariatur,
+            aliquid esse itaque perspiciatis dolorum eligendi quasi soluta
+            laudantium odit quis quisquam enim expedita ratione error
+            necessitatibus sequi odio? Deleniti non maiores corporis quam animi
+            tenetur consectetur ipsum, quae alias obcaecati? Amet, dolorem
+            architecto harum, ea iure sapiente quibusdam, eveniet quidem
+            consectetur ullam voluptatum doloremque. Non necessitatibus tempore
+            quaerat, ipsum perferendis autem deserunt aliquam dolorem facere
+            aspernatur eum delectus corporis rem laborum laudantium adipisci
+            iusto est provident. Dolores soluta a quam, ipsam architecto nobis
+            porro eaque dolorem minima nesciunt atque. Dolore nemo fuga soluta!
+            Vel eos, doloribus facilis dignissimos tenetur dolorum dolore soluta
+            qui nemo placeat unde sequi molestias aspernatur doloremque ad
+            necessitatibus hic voluptatem saepe maxime minus incidunt animi
+            accusamus quisquam ab! Quisquam quasi possimus et, doloribus
+            architecto in provident non sequi sed dolore natus enim illum
+            asperiores? Blanditiis repellendus saepe eaque vitae inventore nobis
+            eum totam voluptas iure culpa et, voluptatum quam! Quod dolore
+            repellendus, unde porro deserunt fuga reiciendis dignissimos
+            voluptate nobis assumenda perspiciatis quis voluptas odio veritatis
+            tenetur nostrum libero amet ab, consequatur, veniam laudantium!
+            Explicabo omnis minima esse earum. Quas consectetur ratione
+            voluptatem sapiente voluptatibus suscipit libero necessitatibus rem
+            impedit quos possimus molestias id ex velit blanditiis excepturi
+            fuga animi, soluta enim. Repellat earum illum magni fugiat id
+            dolorum! Saepe hic eius eos enim debitis architecto voluptatem
+            eveniet praesentium minima laboriosam rem, aut excepturi similique.
+            Voluptatibus aspernatur illum quae reprehenderit quas mollitia sed,
+            cum deleniti nobis ducimus necessitatibus eveniet iste, laudantium
+            nam numquam natus. Dolorum laboriosam omnis itaque placeat deleniti
+            vel tempora. Voluptatum, laboriosam autem! Quam recusandae delectus
+            voluptates temporibus omnis ab, ducimus molestias repellendus
+            suscipit quaerat quis. Deleniti molestiae totam est nam corporis
+            illum eius tempore culpa. Illum labore distinctio accusantium
+            voluptas officia, repellendus perferendis enim dolor perspiciatis
+            corporis cumque tenetur ullam? Iste nesciunt dolores nostrum, velit
+            hic, vero culpa nihil nam reprehenderit iure enim corrupti quas,
+            aliquam laborum consectetur facere! Quis earum corporis ullam,
+            dolorem maiores provident, eaque neque esse sequi ipsum incidunt
+            similique quo nam nobis veritatis cupiditate quaerat corrupti
+            perferendis alias. Sit, esse? Ad, repellat ullam illum odit unde
+            adipisci nostrum labore, maiores incidunt quos quo deleniti neque
+            sed natus nisi explicabo nobis aspernatur? Itaque error sed dolore
+            deserunt assumenda molestiae nostrum esse possimus, omnis neque
+            debitis placeat perferendis repudiandae eaque dignissimos commodi
+            animi iste? Voluptate repellat quod rerum a cumque delectus
+            provident aperiam ea soluta sapiente blanditiis voluptates molestias
+            laboriosam deleniti praesentium, architecto quis nesciunt quae
+            veniam, facere sint voluptatibus in excepturi. Similique quod
+            expedita commodi, iure accusamus explicabo, corrupti laborum ducimus
+            a eos neque, dolores porro officiis suscipit incidunt aperiam eius
+            sit? Temporibus, illo sunt expedita at ipsam, ipsum optio quisquam
+            nisi iusto ex nesciunt vero sequi minus doloremque dignissimos
+            maxime culpa. Ipsam impedit illo neque repellendus sint reiciendis
+            nam, similique nisi eveniet quis debitis nobis cumque tempora,
+            dolores accusamus eligendi rerum mollitia non ullam consectetur nemo
+            est ipsa blanditiis? Ut in adipisci officia, fugiat quaerat ipsam
+            dicta nam quasi molestiae eos sunt praesentium ratione dolorum quae
+            blanditiis laudantium, deleniti veritatis possimus inventore. Id
+            animi a eaque. Doloribus inventore velit odit perferendis nesciunt
+            earum, nisi molestiae quidem eligendi error quod omnis suscipit
+            tempora exercitationem nobis minima. Soluta fugiat cumque unde, vero
+            repudiandae beatae. Eveniet, excepturi blanditiis animi dolore
+            laborum aut enim nemo nisi provident nam corrupti voluptates illum
+            rem voluptatem. Animi maiores molestiae earum dicta excepturi,
+            repellat magnam iusto incidunt cupiditate exercitationem natus harum
+            laudantium aperiam. Necessitatibus est placeat quisquam in et dicta
+            reprehenderit. Similique repellat sit amet nemo dolorum dolores vero
+            cum impedit rerum, at voluptatibus! Repellendus magni eos cumque id
+            repudiandae, natus quae ipsum dolorum minima molestias est magnam
+            cupiditate blanditiis amet asperiores officiis harum perferendis
+            totam ad aliquam aut! A libero, ad voluptatum amet ratione porro
+            magnam distinctio, omnis aut aspernatur facere autem? Officiis quae
+            omnis assumenda nulla, distinctio iure recusandae sint repudiandae
+            voluptatibus et. Beatae vel repellendus voluptas placeat quo id
+            similique a? Labore voluptatem vero aut. Tenetur consequatur alias
+            aliquam veniam labore quos possimus accusantium. Minus ut est quia
+            quae, labore exercitationem vero. Inventore nobis magnam
+            voluptatibus, dicta voluptatem suscipit iusto itaque temporibus
+            harum a quisquam pariatur sapiente repellat. Eos neque similique
+            iure reiciendis laudantium voluptate totam reprehenderit minima
+            quod, et sunt? Delectus cumque omnis eos ea expedita, commodi
+            aliquid natus! Eveniet necessitatibus facilis deserunt, fuga
+            reiciendis molestiae odit ipsa natus. Magni at molestias inventore
+            eos ea quas libero in corrupti, aut commodi expedita amet iste.
+            Labore veniam pariatur harum ab molestiae alias illo ratione vero
+            similique tempore inventore, quisquam placeat voluptate voluptatum.
+            Ducimus est quaerat tenetur ad neque, similique a temporibus
+            sapiente ipsam exercitationem harum aspernatur delectus velit iure,
+            commodi laudantium? Deserunt architecto quod doloribus quos quisquam
+            asperiores consequatur quasi laudantium neque! Quis, officiis
+            corrupti. Obcaecati exercitationem, qui quibusdam voluptas sed
+            laborum impedit tenetur, amet, unde nihil quia? Ipsa voluptatibus
+            consectetur ipsam molestias ratione, suscipit veritatis ad dicta
+            minus, voluptates obcaecati mollitia consequuntur nam consequatur
+            debitis modi error repudiandae voluptatem praesentium rem quibusdam
+            explicabo. Qui mollitia impedit quasi a veniam officia
+            exercitationem rerum quibusdam odio illum blanditiis odit, deleniti
+            repellendus similique aperiam nemo sit voluptatem minus recusandae
+            doloremque ad! Dignissimos, animi ipsa vel cupiditate commodi iste!
+            Commodi dicta expedita eum consequuntur ad tempore, ipsa
+            reprehenderit iste porro ullam id asperiores corporis voluptatum
+            quas, totam assumenda? Non ut exercitationem neque recusandae
+            eligendi cupiditate mollitia adipisci aliquid, reprehenderit quod
+            dolores, doloribus consectetur minus laudantium accusantium delectus
+            quaerat aperiam saepe earum harum. Eos, deleniti nam, reprehenderit
+            nisi illo non tenetur vel tempora qui natus provident animi beatae?
+          </p>
+        </section>
+        <section class="main-page__card sport">
+          <h2>Спортивные услуги</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
+            deserunt enim quas error laboriosam, sequi odit saepe maiores
+            cupiditate. Illum, ex eius! Alias, iure harum? Incidunt eveniet ea
+            ullam magni.
+          </p>
+        </section>
+        <section class="main-page__card other">
+          <h2>Прочие услуги</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+            architecto quas perspiciatis eligendi doloribus nobis sit nesciunt,
+            eius, maxime illo libero repellendus nostrum molestiae unde.
+            Cupiditate et reiciendis libero voluptatem.
+          </p>
+        </section>
+        <section class="main-page__card other">
+          <h2>Прочие услуги</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+            architecto quas perspiciatis eligendi doloribus nobis sit nesciunt,
+            eius, maxime illo libero repellendus nostrum molestiae unde.
+            Cupiditate et reiciendis libero voluptatem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consequatur facere magni, distinctio facilis nemo accusamus corporis
+            unde voluptatem possimus, sapiente voluptates commodi saepe enim
+            reiciendis molestiae non expedita quibusdam vel!
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="copyright">
+          <span>© ГАУ РБ "ДИРЕКЦИЯ СПОРТИВНЫХ СООРУЖЕНИЙ</span>
+        </div>
+        <div class="apps-badgets">
+          
+        </div>
+        <div class="socials">
+          <a href="https://vk.com/dss03" class="social-item" target="_blank"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIsSURBVHgB7ZVNTBNBFMf/u93ST5baFouWesDW+JGoYEMaLyrRACFcvSmY4MHExHD1wsFED8SDJt40Gjl44aYxEo2BGGLUBk0UoljEFEMsxI18lPLVLjMDTDt0A+kBwqG/y8y8tzP/9968zELX9Sf69tIqYwcoiuw+EWV9MjA8jnQmw+YWs4LjByvYXJtO4V73ezLOsbVJltEYCaG+NsQPmUqmMDz2L3uoScbJ4D5IkpQVSaYW0fnsHXQ9q955rR4Bnwuqw4LAXhU/4pPc1/81zkVIi6Lj0Vv81Wa532Yx4/6NJpTaLWzNyuWwleBcdZWQYs+nGI+q9kil4NNzonkdHREEKJFjAS7ARSh1p6qwlh2j78tvxBNTXMiIWVKB5/3fBZvP7URLQ7Vg47uDfg8iRwPcsbScxtNXn1c/kiWImayOPR9/YvJ/ktutJQpuXjrDRkMRyuWGGjisZr7+NppAd+8gYn80YVNCm8GbaIz4hgT71eYwfHuc2IhE3y4ytqwbaHSPXw6gUPxeFXevNxq5ruQV+0I4iMMHylEoE6RstOuMyBOh9W+/eBqeMjsKgd7hwxdRDI5ObC1CKXNayQWehddlLORR7XjQ3oyaQ/sFe2phCbe7evFrXNtahOL3lqKjtQ6hSk+ez63aWKY0Y9r6uaQzOu509WFmboHbFGxCucuBW23n2ZPzYWgM84vLzH6CPBkUs2JCW1MYFaSjRnKid5NMhTYu/hmLItvGCvI1Z3kyWkL8AAAAAElFTkSuQmCC"
+              alt="vk icon" /></a
+          ><a href="https://ok.ru/dss03" class="social-item" target="_blank"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJdSURBVHgBtZZJaFNBGMd/aVJTu2haS3BDGmjdtaGinkRoPYmiFVHRSw4KXlzRKoIHTzUgHkTQkwuKC+jFiyeRgq0GRZJaFyxpEa1rozbUGLV1nGEok1eSl+Rh/xDe981H5vdmvoWHEOKSmFiFPBSqwSh8fADpBJTVQqAVKmYW9Nf8kN9D0LET+m5Z17v2QmMbNB2D0iqcQ8RfuLMaErHssehJ+PEOmq/YblNiG+05awVMbYD6bVA+w6z1XoWBeziHxG8YO7AJtr6EluuwpQdqm0zs9WWcQUZSMNRr/MZD4HJr21sDSw+a2GAMZxC1YUmp8VVVZSrT95TjDOL2gm+u8bv2w/BbbSeiOuljql6Eneyra8kBeN+h7WQcrgVk0qdD6oOuLiWXC4JtttvYJ75uAyzcbXwxKkt2wACUVrRbT1w0RGnVOVgZll3ut65XzIY1N+UpjuTdIvd1qep6dVFWkg8W75HVJHOS6NZXpQA1Mg8jP3UveauhYYcDSPdpeHxc2yqxgc3gX6bn1vAb6L8tX+KChiqp3NRvLxKS+mTsb8/1z07jSzxDuXOy/IR8M3kFrjxpc5fpRs0skHHKfRLV1S1yLgXlBn3yap6dgT9JE1d5WbAL5oWgcg52yl9d04IwmrYClFQpq4TnARQGiRyF2KksAQGd+3LEioEoQDRs/Ko6WCfH+mS/AT06DC/OO4R8jlgBvvmw8SHMaobWSAZIqlP20a/vDiCqHzyVBrD2rp5bYydaf18/lSZN0QM1l2y/Vr48ESIaFiL9NXs8GRfiabt89gu7rxV7yP9R6B9S9LuVyXmSoAAAAABJRU5ErkJggg=="
+              alt="od icon" /></a
+          ><a href="https://t.me/dssburuu" class="social-item" target="_blank"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAsQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMVSURBVEiJrZZLTFRXGMd/58wVR5jBVKU+oDjqMEJNXBsTjaZJ09ZEaGqqKPh2q6aLLtvUrurSulHbBKMxgYQ0INq67LZN2RSCg8P4YIBAQXDG6MC953wuUJknIPV/czf/nPP7Huece65iHm1re1otytYjap+CkEAVgIKEwCOFdCmjOnoaVw8WY6hCZqRtvNJBfSfIKcA3XxKABdrF+L693/jBowUD1LWON4DcAAILgHOV0oqm3q8rOjNNnQVvGzsH0r4EOEDQCr993Dp2NtN8W0Fd62iDiGrPDboEWRH1ZbRxthIFEL45UeU4Xh9Ly7yQUiK6NtpYMawBHO1eQCSACO/pDaLMDwBqW9twtWdUnIV3S5b8PsVn1X72bljOvcE0d5+kc4cYY0zI8QwNiCwaHl7pcChcyv7QCspLZpcrnvRmM8+WT/t89Q4iny8E1Qr2VvppjpSxY+1yADw7B3yc8oC8ACjhC0dEwsXA5SWarzaXciRSxkcBB4DxtOHyvylO1wWpCvheB3CR/AoA2eIgsi7X3lTucHRrgIbNZZQ6c2ex4+ELrvam+Hn36rdwgMdJt1CLACqdXGf3Bj9X9qxBZ5zx0ReG7/+aJDrl0vJJBRuDc9OSM5aJtC3WBOtYkWEFkTfOn0MvOfDHKLvW+9m+poSBZy5Xe1Os8mtuffoh60uz90PsWbH2AKKGHY2NCyqS6fdMTNMzMZ019uLOVXlwgP4pl0ILDICSuAbuLObw/Pj3U7r/m85j9E/OFJ0j2C5tXK9DECPM/ySeuxy+N8JP3ZNMm7mMo1MzRWbgobzbeuBkeBArLYupwljhl54p6ruG+GcsTeK5R/dYunD2Yn6NNdUkFEDkerTS4vQBwcLNfGcll2lfbV9zaEQD9B/bOiTIQRExIsL/fC3WNvU1h0Yg49s/cCz8O/ANs1fgUmURzsdO1Nx+Y+RdmeGWB/tFuMm7tyspIkfiJyNdmWbe7RU7XtOphC1W5JKIeItsyQ1vxq3NhResIKuaaw+qjLb1SrEP2MTr3xYgAcRR3NGe7oydqUkUY7wCgRQI1y/BG7MAAAAASUVORK5CYII="
+              alt="telegram icon" /></a
+          ><a
+            href="https://www.youtube.com/channel/UCfOQoOCogLtL6fh0fwnZ5vw"
+            class="social-item"
+            target="_blank"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgB7ZW7T9tQFId/vnaTJnVKUtIQlnRq13ZqGatOrfqYy4BgQCDEgMSIQKxIgGBAICTEQ4DYkHgjJAIbDPAnAAIGHhKBmMQk+HGxgwiyHRIHAgPikyxdX53jT9fH5xiU0mH6uFQRPAHPR8KZN2g8DiV6BvXkBKoQBY3FQGUJkGRrttMB4nCC8XhAfD6wvmIwXi8YjsssoYkETluacLE4r91Q3BfC8+Cra+Gprrndu1mc9/XgYmHuQQIdVTu50N2J5PqaVZIIL6OQJFbDRgmVJEg723cm8BWVePO/HGAY2EXZ3zdJzoWsCaSkBN7mVgSXwnD/+WtLJh8dmiTJS9iBLS2Fr60dgckpuH7+yhpLRdEogaoiH159/IR3HV14PzYBx+cvmSWybJLcAyoIEGdnIG1v5Yy97hNi36WeRiBOT0Po702J7oJhiUnCcciFfvzY4ABiI0NQo9Gc8YybN0r0Ls1GciWM+PgolIMD2IUNBo0SxuUCGwhAOT7OLNncQL5woVB6nX5xrt//UEic38qsEk9dPZxfy/BQ9In8tqERr7//SO+lK07cbvgHRyDv7UKJRFLNRLUCq2Jca9akNicU6xO1DyY16rWa6qOeFBWBLfaD+P3GMEte6EPqKiQv//i8uAJYiP2BMh06oQAAAABJRU5ErkJggg=="
+              alt="youtube icon"
+          /></a>
+        </div>
+        <div class="shield">
+          <a href="https://more-studio.ru" target="_blank"
+            ><img
+              src="data:image/png;base64,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"
+              alt="more-studio logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/myjs.js"></script>
+  </body>
+</html>
